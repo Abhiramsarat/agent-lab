@@ -7,7 +7,18 @@ policy-loading and answering logic) from main.py — this file is just the
 "front desk" that people see and type into.
 """
 
+import os
 import streamlit as st                    # the kit that turns Python into a web page
+
+# When running online (Streamlit Cloud), the secret AI key comes from Streamlit's
+# private "secrets" box. This line makes it available before we load the assistant.
+# On your laptop this does nothing, and the .env file is used instead.
+try:
+    if "ANTHROPIC_API_KEY" in st.secrets:
+        os.environ["ANTHROPIC_API_KEY"] = st.secrets["ANTHROPIC_API_KEY"]
+except Exception:
+    pass
+
 from main import load_policies, ask_hr    # reuse the logic we already built
 
 # --- Set up the page (title, icon) ---

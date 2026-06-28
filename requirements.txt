@@ -1,0 +1,6 @@
+# Kits the online host installs to run the HR assistant web app.
+# (Kept at the top level so the hosting service finds it easily.)
+
+anthropic
+python-dotenv
+streamlit

@@ -17,7 +17,11 @@
       "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Add HR assistant tool with policy grounding and human-escalation guardrails\")",
       "Bash(sed 's|.*/||')",
       "Read(//Users/abhiramsarat/Downloads/**)",
-      "Bash(./.venv/bin/streamlit --version)"
+      "Bash(./.venv/bin/streamlit --version)",
+      "Bash(git config *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
     ]
   }
 }
