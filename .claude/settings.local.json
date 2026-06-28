@@ -10,7 +10,11 @@
       "Bash(python3 -m venv .venv)",
       "Bash(./.venv/bin/pip install *)",
       "Bash(./.venv/bin/pip list *)",
-      "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Add first tool: headline rewriter\")"
+      "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Add first tool: headline rewriter\")",
+      "Bash(git check-ignore *)",
+      "Bash(./.venv/bin/python projects/headline-rewriter/main.py)",
+      "Bash(./.venv/bin/python projects/hr-assistant/main.py)",
+      "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Add HR assistant tool with policy grounding and human-escalation guardrails\")"
     ]
   }
 }
