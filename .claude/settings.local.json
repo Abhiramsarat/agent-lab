@@ -16,7 +16,8 @@
       "Bash(./.venv/bin/python projects/hr-assistant/main.py)",
       "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Add HR assistant tool with policy grounding and human-escalation guardrails\")",
       "Bash(sed 's|.*/||')",
-      "Read(//Users/abhiramsarat/Downloads/**)"
+      "Read(//Users/abhiramsarat/Downloads/**)",
+      "Bash(./.venv/bin/streamlit --version)"
     ]
   }
 }
