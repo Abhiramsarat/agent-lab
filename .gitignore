@@ -1,0 +1,14 @@
+# This file lists things the computer should NOT save to history or share.
+# It protects your secrets and keeps the lab tidy. You rarely need to touch it.
+
+# --- Secrets (most important line in this file) ---
+.env
+
+# --- Python's temporary junk files ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Mac's invisible clutter ---
+.DS_Store
