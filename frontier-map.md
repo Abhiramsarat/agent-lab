@@ -14,5 +14,11 @@ Honest running list: what I can do solo vs. what I still need help with. This is
 - Automate a full process end-to-end (client reporting). *(Phase 3)*
 - Orchestrate multiple agents handing off. *(Phase 4)*
 
-## 💰 Economic-impact watchlist (what's worth monetizing first)
-- *(to be filled during Phase 0 as we tag MyCA's steps by payoff)*
+## 🗺️ MyCA frontier (Phase 0 finding, 2026-06-28)
+MyCA is a **scripted pipeline** (Intake → Dossier → Session → Design → Brief). It exercises *model* judgment at only **two** owned points — `extract-document` and the `signal hunter` — and the actual words are written by **Lovable** (external). The biggest "hand it to the model" opportunities: the **Brain** (rules today) and the **fixed orchestration itself** (the plan's "give up the control flow").
+
+## 💰 Economic-impact watchlist (from the MyCA dissection)
+- **Signal hunter** — *highest* payoff. The moat: turns generic → bespoke in one cheap AI call that self-skips. **Keep & strengthen.**
+- **Document extraction** — *high* payoff. Kills manual data entry, captures signal no form could; human-curated, so safe. **Keep.**
+- **The Brain (Dossier)** — scripted rules today; the best **candidate to hand to the model** (the Phase-0 reflection answer). Weigh cost vs. control.
+- **Content writing** — outsourced to Lovable. Strategic question: how much to pull in-house via the four-trigger enrichment.
