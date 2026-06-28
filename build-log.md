@@ -11,3 +11,4 @@ One or two lines per day: what I built, what broke, what I learned.
 - Read the MyCA architecture brief; drew the pipeline-vs-agent frontier map (one-page diagram = the deliverable).
 - Finding: scripted pipeline with 2 owned AI-judgment points (`extract-document`, `signal hunter`); the words are written by Lovable (external).
 - Reflection answer — which scripted steps could I now hand to the model? The **Brain** (Dossier), and the **fixed orchestration** itself.
+- Closed Phase 0: read Anthropic's tool-use docs + "Building Effective Agents" against the map. Classified MyCA as a **workflow** (prompt chaining + routing + human gates + 2 single-shot augmented-LLM calls), not an agent. The gap = the autonomous agent loop → Phase 1. **Phase 0 COMPLETE.**
