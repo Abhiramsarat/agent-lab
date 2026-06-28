@@ -1,0 +1,5 @@
+# This file lists the pre-built code "kits" this tool needs to run.
+# Your assistant installs these for you with one command.
+
+anthropic        # the official kit for talking to the Claude AI
+python-dotenv    # lets the tool read your secret key from the private .env file

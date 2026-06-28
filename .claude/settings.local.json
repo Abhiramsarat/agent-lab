@@ -4,7 +4,13 @@
       "Bash(git --version)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Set up the learning lab\")"
+      "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Set up the learning lab\")",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(./.venv/bin/pip install *)",
+      "Bash(./.venv/bin/pip list *)",
+      "Bash(git -c user.name=\"Agent Lab\" -c user.email=\"abhiramsarat@gmail.com\" commit -q -m \"Add first tool: headline rewriter\")"
     ]
   }
 }
