@@ -21,3 +21,8 @@ One or two lines per day: what I built, what broke, what I learned.
 - Placement: the brief's recommended beachhead — the **compile → audit → repair → recompile loop** — IS a Phase 1 agent loop (the *evaluator-optimizer* pattern we named as MyCA's gap). Converges plan + economics + the brief's own "build this first."
 - Constraint reset for MyCA work: **Sonnet not Opus**, bounded loops, human gates, fail-open, log to `agent_log`.
 - Next: locate the MyCA codebase, then build loop v0.
+
+## 2026-06-29 (cont.) — Agentic sprint: sandbox up, compile extracted
+- MyCA v2 export copied to `sandbox/myca/` (gitignored — proprietary code never touches the public repo).
+- Installed Node.js (the JavaScript runner) via nvm.
+- **Extracted `compileBrief` verbatim** (BriefPage.jsx lines 28–676 → `sandbox/loop-v0/compile.mjs`) and smoke-tested: 16 sections compile outside the browser. The brief's stated prerequisite for loop v0 is met — an agent can now recompile without a human clicking.
