@@ -1,0 +1,5 @@
+# Kits this agent needs.
+anthropic         # talks to the Claude AI
+python-dotenv     # reads your secret key from the private .env file
+requests          # downloads web pages
+beautifulsoup4    # pulls the readable text out of a web page's HTML

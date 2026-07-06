@@ -22,3 +22,10 @@ MyCA is a **scripted pipeline** (Intake → Dossier → Session → Design → B
 - **Document extraction** — *high* payoff. Kills manual data entry, captures signal no form could; human-curated, so safe. **Keep.**
 - **The Brain (Dossier)** — scripted rules today; the best **candidate to hand to the model** (the Phase-0 reflection answer). Weigh cost vs. control.
 - **Content writing** — outsourced to Lovable. Strategic question: how much to pull in-house via the four-trigger enrichment.
+
+## ⚡ MyCA v2 + agentic target (updated 2026-06-29)
+Fable rewired MyCA to v2 — the frontier moved:
+- **4 AI call sites now:** `extract-document`, **`hunt-signal` (now the inference engine** — thesis / hero / headings / hierarchy, runs for EVERY firm), **`audit-brief` (NEW** — verification loop flagging MISSING / CONFLICT / UNVERIFIED), `scrape-website`.
+- **Agentic target:** an *orchestrator agent* owns each firm's journey to a goal state ("a brief that passes the audit + expresses the firm's distinguishing signal"), decides next steps, calls the existing functions as tools, and pauses at human gates. `stage` becomes derived status, not the control flow.
+- **THE FIRST AGENTIC BUILD (beachhead): the `compile → audit → repair → recompile` loop** (cap 2–3). This is the **evaluator-optimizer** pattern — the exact one Phase 0 flagged as MyCA's *missing* pattern. Machine-side (no UX change), bounded, fail-open, crisp success (audit clean). Proof demo: a firm with a planted conflict repairs itself, each step logged to a new `agent_log` column.
+- **Invariants (never break):** ICAI compliance is law; authority hierarchy holds (compliance > firm directives > firm-confirmed > inference > defaults); never invent facts; human gates stay (doc curation, session, final send); cost discipline (**Sonnet, not Opus**; bounded loops); determinism via seed = firmName|city|practices; fail-open; `firms` table is the single source of truth.
