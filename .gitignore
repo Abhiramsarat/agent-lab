@@ -12,3 +12,8 @@ venv/
 
 # --- Mac's invisible clutter ---
 .DS_Store
+
+# --- Proprietary code sandbox (MyCA) ---
+# The lab's GitHub locker is PUBLIC (for the Streamlit deploy).
+# MyCA is proprietary company code and must never be pushed there.
+sandbox/
