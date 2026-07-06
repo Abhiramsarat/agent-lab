@@ -26,3 +26,8 @@ One or two lines per day: what I built, what broke, what I learned.
 - MyCA v2 export copied to `sandbox/myca/` (gitignored — proprietary code never touches the public repo).
 - Installed Node.js (the JavaScript runner) via nvm.
 - **Extracted `compileBrief` verbatim** (BriefPage.jsx lines 28–676 → `sandbox/loop-v0/compile.mjs`) and smoke-tested: 16 sections compile outside the browser. The brief's stated prerequisite for loop v0 is met — an agent can now recompile without a human clicking.
+
+## 2026-06-29 (cont.) — LOOP v0 CONVERGED ✅
+- Built audit twin (verbatim prompt, Sonnet), repair, and the bounded run loop. Repair v1 (inject binding directives) FAILED — auditor: "acknowledged but not executed." Lesson: you can't fix a document with memos; you must edit it.
+- Repair v2 (one Sonnet call per round makes REAL edits, client's words only) **converged: 5 → 5 → 1 → 0 findings. Audit clean in 3 rounds**, every decision in agent-log.json. The planted NRI conflict was caught and fully unwound (badge → strip → dedicated page → compliance classification).
+- **Discovery for production:** the auditor only sees free-text sources (narrative/notes/leverage) — NOT structured intake (years, team size, clients). It flagged real intake facts (Est. year, team size) as UNVERIFIED and the repair placeholder-ed them out — an overcorrection caused by the auditor's blind spot. Fix: pass structured intake fields into the audit sources block. This is exactly the "audit prompt may be too noisy" tuning the v2 brief predicted.

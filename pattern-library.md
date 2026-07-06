@@ -16,3 +16,8 @@ The vocabulary, with where MyCA already uses each:
 - **Parallelization / Orchestrator-workers / Evaluator-optimizer / Autonomous agent** — *NOT used in MyCA.* The **autonomous agent loop** (a model directing its own steps from tool feedback) is the gap Phase 1 fills.
 
 **The #1 principle, which MyCA already follows:** start simple; only add AI — or an agent — where it earns its place. In Anthropic's terms MyCA is a **workflow, not an agent** — and that's by good instinct, not accident.
+
+## From loop v0 (the compile→audit→repair loop)
+- **Evaluator-optimizer, learned the hard way:** repair-by-directive fails — an auditor judges what the document *says*, not what it *intends*. Repair must EDIT the artifact; the loop re-checks the changed artifact. (Findings: 5→5 with memos; 5→1→0 with edits.)
+- **The evaluator must see everything the producer saw.** Our auditor lacked the structured intake fields, so it flagged true facts as inventions — and the repairer "fixed" them away. An incomplete evaluator causes overcorrection, not just missed findings.
+- **Bound the loop, log every decision.** Cap rounds; on cap, stop and escalate residuals to humans. `agent_log` with rationale per step = auditability for free.
